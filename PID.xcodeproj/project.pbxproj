@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		04B000C98D864F738CAFA8CC /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D98E41A363F24615BC8968FF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				096C027F02B04C858A669478 /* CMake Rules */,
+			);
+			dependencies = (
+				493AAC2AC0C443849998217B /* PBXTargetDependency */,
+				CFA7B4710BA240688DB45D75 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		50A5F1E970DC47F2AD4C7A33 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 956F030DAF794A06ACC98D6D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				5AE00B36D060405989BDAF67 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		368EF0C2A5164EA2B78BBCC7 /* PID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17B0631AE82349A7A8AE354A /* PID.cpp */; };
+		7E61E0F802504F6081375355 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E4215BCC8724482AA9EDA9C /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91B66E36A8BC4DF1A0C2DFB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D17A93B4AF5B403AB37C934D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A5F1E970DC47F2AD4C7A33;
+			remoteInfo = ZERO_CHECK;
+		};
+		9309F789A197417BAC446CD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D17A93B4AF5B403AB37C934D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47EB6B5DAA384D42AA5AB05A;
+			remoteInfo = pid;
+		};
+		BF75EC2ABDD5453EA9288FCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D17A93B4AF5B403AB37C934D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A5F1E970DC47F2AD4C7A33;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13B6BF6444054007B4AA5A52 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		17B0631AE82349A7A8AE354A /* PID.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PID.cpp; path = src/PID.cpp; sourceTree = SOURCE_ROOT; };
+		2771B2C76E244945BB18D7C3 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2E4215BCC8724482AA9EDA9C /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		9D8270A608114781934FE79F /* pid */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = pid; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5EFFF041EB4E00AF233EA1 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FCC2C50D2099486600C4857B /* PID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PID.h; path = src/PID.h; sourceTree = "<group>"; };
+		FCC2C50E2099496200C4857B /* reflection.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = reflection.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3315B675AC634B2EBF22E6F3 = {
+			isa = PBXGroup;
+			children = (
+				F80B3A3D15B249CEAC48E71F /* pid */,
+				8F70F5F7B5884A6DB71B29B7 /* ALL_BUILD */,
+				C535A5AE2DE7401181C00538 /* ZERO_CHECK */,
+				C7E1411EAAEE404DBAE681F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C25EA71905443EF99050167 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCC2C50D2099486600C4857B /* PID.h */,
+				17B0631AE82349A7A8AE354A /* PID.cpp */,
+				2E4215BCC8724482AA9EDA9C /* main.cpp */,
+				FCC2C50E2099496200C4857B /* reflection.md */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		5427CE39FC1B48ED85D3A075 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		647D6FDAAB5947E7AC037FFD /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		8F70F5F7B5884A6DB71B29B7 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				647D6FDAAB5947E7AC037FFD /* CMake Rules */,
+				2771B2C76E244945BB18D7C3 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		C535A5AE2DE7401181C00538 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				5427CE39FC1B48ED85D3A075 /* CMake Rules */,
+				13B6BF6444054007B4AA5A52 /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		C7E1411EAAEE404DBAE681F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D8270A608114781934FE79F /* pid */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F80B3A3D15B249CEAC48E71F /* pid */ = {
+			isa = PBXGroup;
+			children = (
+				3C25EA71905443EF99050167 /* Source Files */,
+				AA5EFFF041EB4E00AF233EA1 /* CMakeLists.txt */,
+			);
+			name = pid;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47EB6B5DAA384D42AA5AB05A /* pid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EED1B0C73564F27ADD9F4E4 /* Build configuration list for PBXNativeTarget "pid" */;
+			buildPhases = (
+				2AF2DECE14EF47A8BD5E68CD /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2876A1C308B4C318EAF25BE /* PBXTargetDependency */,
+			);
+			name = pid;
+			productName = pid;
+			productReference = 9D8270A608114781934FE79F /* pid */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D17A93B4AF5B403AB37C934D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0920;
+			};
+			buildConfigurationList = 90417F876A524A7D899690C5 /* Build configuration list for PBXProject "PID" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3315B675AC634B2EBF22E6F3;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04B000C98D864F738CAFA8CC /* ALL_BUILD */,
+				50A5F1E970DC47F2AD4C7A33 /* ZERO_CHECK */,
+				47EB6B5DAA384D42AA5AB05A /* pid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		096C027F02B04C858A669478 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/ytan/Workspace/submit/CarND-PID-Control-Project -f /Users/ytan/Workspace/submit/CarND-PID-Control-Project/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		5AE00B36D060405989BDAF67 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/ytan/Workspace/submit/CarND-PID-Control-Project -f /Users/ytan/Workspace/submit/CarND-PID-Control-Project/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AF2DECE14EF47A8BD5E68CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368EF0C2A5164EA2B78BBCC7 /* PID.cpp in Sources */,
+				7E61E0F802504F6081375355 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		493AAC2AC0C443849998217B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47EB6B5DAA384D42AA5AB05A /* pid */;
+			targetProxy = 9309F789A197417BAC446CD1 /* PBXContainerItemProxy */;
+		};
+		A2876A1C308B4C318EAF25BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A5F1E970DC47F2AD4C7A33 /* ZERO_CHECK */;
+			targetProxy = BF75EC2ABDD5453EA9288FCF /* PBXContainerItemProxy */;
+		};
+		CFA7B4710BA240688DB45D75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A5F1E970DC47F2AD4C7A33 /* ZERO_CHECK */;
+			targetProxy = 91B66E36A8BC4DF1A0C2DFB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		188340000A4C4842866C4C22 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/ytan/Workspace/submit/CarND-PID-Control-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		2280D22B170B468BB85C41E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/ytan/Workspace/submit/CarND-PID-Control-Project/build";
+			};
+			name = Release;
+		};
+		241CFC1588D1459BAAB5FF86 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/ytan/Workspace/submit/CarND-PID-Control-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		29DE48590DDF428B99A48A1F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/ytan/Workspace/submit/CarND-PID-Control-Project/build";
+			};
+			name = RelWithDebInfo;
+		};
+		2AEF276FB37849E8B724E0D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/ytan/Workspace/submit/CarND-PID-Control-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		442F96B3FE4C4673A5DBC4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1*/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+					"/usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/opt/openssl/lib,
+					"/usr/local/Cellar/libuv/1*/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"/usr/local/Cellar/libuv/1*/lib",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++11",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"-lz",
+					"-lssl",
+					"-luv",
+					"-luWS",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pid;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/ytan/Workspace/submit/CarND-PID-Control-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		49A370FA7BBD4E4096973948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/ytan/Workspace/submit/CarND-PID-Control-Project/build";
+			};
+			name = Debug;
+		};
+		50703E97625B48B4A61B01E4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1*/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+					"/usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/opt/openssl/lib,
+					"/usr/local/Cellar/libuv/1*/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"/usr/local/Cellar/libuv/1*/lib",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"-std=c++11",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"-lz",
+					"-lssl",
+					"-luv",
+					"-luWS",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pid;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/ytan/Workspace/submit/CarND-PID-Control-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		61C4BF2BCDE8457DABEEA3B6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/ytan/Workspace/submit/CarND-PID-Control-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		6A3245C052024010B23292FD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/ytan/Workspace/submit/CarND-PID-Control-Project/build";
+			};
+			name = MinSizeRel;
+		};
+		7B92AFA8F39645DBA80E1654 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1*/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+					"/usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/opt/openssl/lib,
+					"/usr/local/Cellar/libuv/1*/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"/usr/local/Cellar/libuv/1*/lib",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"-std=c++11",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"-lz",
+					"-lssl",
+					"-luv",
+					"-luWS",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pid;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/ytan/Workspace/submit/CarND-PID-Control-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		8F50BDBE8F1D4A66BCCAE70E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/ytan/Workspace/submit/CarND-PID-Control-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		90EC8DE8C55C4656B7F71316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/ytan/Workspace/submit/CarND-PID-Control-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		AD2D6E3B9A3A4B15B64565BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1*/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+					"/usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/opt/openssl/lib,
+					"/usr/local/Cellar/libuv/1*/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"/usr/local/Cellar/libuv/1*/lib",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"-std=c++11",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"-lz",
+					"-lssl",
+					"-luv",
+					"-luWS",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pid;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/ytan/Workspace/submit/CarND-PID-Control-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		E18C3E4BD194419FA8BC6D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/ytan/Workspace/submit/CarND-PID-Control-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		FA4F89E839CB4611A0464D48 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/ytan/Workspace/submit/CarND-PID-Control-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EED1B0C73564F27ADD9F4E4 /* Build configuration list for PBXNativeTarget "pid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442F96B3FE4C4673A5DBC4D9 /* Debug */,
+				AD2D6E3B9A3A4B15B64565BE /* Release */,
+				50703E97625B48B4A61B01E4 /* MinSizeRel */,
+				7B92AFA8F39645DBA80E1654 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		90417F876A524A7D899690C5 /* Build configuration list for PBXProject "PID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A370FA7BBD4E4096973948 /* Debug */,
+				2280D22B170B468BB85C41E2 /* Release */,
+				6A3245C052024010B23292FD /* MinSizeRel */,
+				29DE48590DDF428B99A48A1F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		956F030DAF794A06ACC98D6D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AEF276FB37849E8B724E0D4 /* Debug */,
+				8F50BDBE8F1D4A66BCCAE70E /* Release */,
+				188340000A4C4842866C4C22 /* MinSizeRel */,
+				FA4F89E839CB4611A0464D48 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D98E41A363F24615BC8968FF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E18C3E4BD194419FA8BC6D88 /* Debug */,
+				90EC8DE8C55C4656B7F71316 /* Release */,
+				61C4BF2BCDE8457DABEEA3B6 /* MinSizeRel */,
+				241CFC1588D1459BAAB5FF86 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D17A93B4AF5B403AB37C934D /* Project object */;
+}
